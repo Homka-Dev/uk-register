@@ -1,0 +1,142 @@
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas:
+            'left-panel center-panel right-panel'
+            'navbar navbar navbar';
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: -8px;
+
+    background: url("/images/background.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.leftPanel {
+    grid-area: left-panel;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+
+}
+
+.center-panel {
+    grid-area: center-panel;
+    justify-content: center;
+}
+
+.right-panel {
+    grid-area: right-panel;
+}
+
+.navbar {
+    grid-area: navbar;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+
+.leftText {
+    display: grid;
+    font-family: 'NeuaMachina', sans-serif;
+    color: white;
+    font-size: 40px;
+    -webkit-text-stroke-color: #cca975;
+    -webkit-text-stroke-width: 1px;
+
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navitem {
+    margin-right: 20px;
+    font-size: xxx-large;
+    font-weight: bold;
+
+
+}
+
+.navlink {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.navtext::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 2px;
+    background: #cca975;
+    transition: width 0.7s;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navlink:hover .navtext::after {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.navtext {
+    font-family: 'NeuaMachina', sans-serif;
+    -webkit-text-stroke-color: #cca975;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+.circle {
+    margin-left: -8px;
+
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:768px){
+	.navitem{
+		font-size: large;
+		margin-right: 10px;
+	}
+
+	.leftText{
+		font-size: 15px;
+		width: 120px;
+		position: relative;
+		left: 125px;
+		top: -30px;
+	}
+
+	.circle{
+		position: relative;
+		top: 70px;
+		width: 120px;
+		height: 120px;
+	}
+
+	.logo{
+		width: 240px;
+		height: 240px;
+	}
+}

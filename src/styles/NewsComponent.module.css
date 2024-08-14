@@ -1,0 +1,43 @@
+
+
+
+.newsBlock {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+
+    margin: 20px;
+    border-radius: 50px;
+    background: white;
+    height: 300px;
+
+}
+
+.newsPhoto {
+    margin: 12px;
+    margin-left: 40px;
+    margin-top: 20px;
+		border-radius: 10px;
+
+}
+
+.newsText {
+    margin: 5px;
+    height: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+@media (max-width:768px){
+	.newsPhoto{
+		width: 120px;
+		height: 120px;
+		position: relative;
+		top: 80px;
+		border-radius: 10px;
+	}
+
+	.newsText{
+		font-size: 15px;
+	}
+}

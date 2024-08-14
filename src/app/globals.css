@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main-content right-section'
+        'footer footer';
+    grid-template-columns:  5fr 1fr;
+    grid-template-rows: auto auto auto;
+
+
+    font-family: Intro;
+
+    background-color: rgba(232, 232, 232, 0.99);
+}
+
+.main-content{
+    grid-area: main-content;
+}
