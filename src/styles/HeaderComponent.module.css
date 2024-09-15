@@ -10,6 +10,7 @@
 
     background: url("/images/background.png") no-repeat center center;
     background-size: cover;
+		filter: drop-shadow(-0.384px 10.993px 10.5px rgba(0,0,0,0.35));
     background-position: center;
     background-repeat: no-repeat;
 
@@ -59,7 +60,7 @@
 
 .navitem {
     margin-right: 20px;
-    font-size: xxx-large;
+    font-size: 26px;
     font-weight: bold;
 
 
@@ -79,7 +80,7 @@
 .navtext::after {
     content: '';
     display: block;
-    width: 3px;
+    width: 0px;
     height: 2px;
     background: #cca975;
     transition: width 0.7s;

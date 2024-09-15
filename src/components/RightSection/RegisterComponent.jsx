@@ -5,7 +5,7 @@ export default function RegisterComponent() {
     return (
         <div className={styles.section}>
             <div className={styles.sectionName}>Регістрація</div>
-						<form className={styles.loginForm}>
+						<form		 className={styles.loginForm}>
                     <div className={styles.formGroup}>
                         {/* <label htmlFor="username" className={styles.label}>Ім'я користувача</label> */}
                         <input type="text" id="username" name="username" className={styles.input} placeholder="Введіть ім'я користувача" />
